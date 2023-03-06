@@ -1,0 +1,43 @@
+# Logical
+
+Titles
+-
+title_id PK
+title
+
+Employees
+-
+emp_no PK
+emp_title_id FK 
+birth_date
+first_name 
+last_name 
+hire_date
+sex  
+
+Departments
+-
+dept_no PK
+dept_name 
+
+
+Dept_manager
+-
+
+dept_no PK FK 
+empl_no PK FK 
+
+
+Dept_emp
+-
+dept_no PK FK - 
+empl_no PK FK - 
+
+
+Salaries
+-
+emp_no PK FK 
+Salary
+
+
+

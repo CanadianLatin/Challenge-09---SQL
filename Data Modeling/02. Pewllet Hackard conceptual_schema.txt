@@ -1,0 +1,62 @@
+# Conceptual (without relationships)
+
+
+Titles
+-
+
+
+Employees
+-
+
+
+Departments
+-
+
+
+Dept_manager
+-
+
+
+Dept_emp
+-
+
+
+Salaries
+-
+
+*******************************************
+
+# Conceptual (with relationships)
+
+Titles
+-
+
+
+Employees
+-
+Rel Titles
+
+
+
+Departments
+-
+
+
+
+Dept_manager
+-
+Rel Departments
+Rel Employees
+
+
+Dept_emp
+-
+Rel Departments
+Rel Employees
+
+
+
+Salaries
+-
+Rel Employees
+

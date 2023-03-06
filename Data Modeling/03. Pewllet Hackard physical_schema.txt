@@ -1,0 +1,44 @@
+Titles
+-
+title_id Varchar(5) PK
+title Varchar(30)
+
+Employees
+-
+emp_no Integer, PK
+emp_title_id Varchar(30) FK - Titles.title_id
+birth_date Date
+first_name Varchar(50)
+last_name Varchar(50)
+hire_date  Date
+sex  Varchar(1)
+
+Departments
+-
+dept_no Varchar(4) PK
+dept_name Varchar(30)
+
+
+Dept_manager
+-
+#Primary key is a Composite PK 
+#with dept_no and empl_no part of it
+dept_no Varchar(4) PK FK - Departments.dept_no
+empl_no Integer PK FK - Employees.emp_no
+
+
+Dept_emp
+-
+#Primary key is a Composite PK 
+#with dept_no and empl_no part of it
+dept_no Varchar(4) PK FK - Departments.dept_no
+empl_no Integer PK FK - Employees.emp_no
+
+
+Salaries
+-
+emp_no Integer PK FK - Employees.emp_no
+Salary Integer
+
+
+
